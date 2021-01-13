@@ -1,5 +1,5 @@
 ---
-name: Bug report
+name: "Bug report \U0001F41E"
 about: Я нашел баг
 title: ''
 labels: bug

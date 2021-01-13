@@ -1,5 +1,5 @@
 ---
-name: Idea
+name: "Idea \U0001F4A1"
 about: У меня есть идея или предложение по улучшению
 title: ''
 labels: idea
