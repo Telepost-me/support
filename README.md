@@ -1,5 +1,7 @@
 # [Telepost](https://telepost.me/) <img src="https://app.telepost.me/assets/favicons/icon-194x194.png" alt="Telepost logo" align="right" />
 
+![workflow status](https://github.com/Telepost-me/support/actions/workflows/main.yml/badge.svg)
+
 **Лучший отложенный постинг для Телеграм!**
 
 Telepost помогает администраторам каналов сократить рутинную работу и сосредоточиться на производстве качественного контента. Здесь есть отложенные посты, визуальный редактор, совместная работа и многое другое. А главное — это совершенно **бесплатно**!

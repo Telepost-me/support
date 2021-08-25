@@ -1,0 +1,57 @@
+name: Telegram
+
+# Controls when the workflow will run
+on:
+  issues:
+    types:
+      - opened
+      - reopened
+      - deleted
+      - closed
+
+  # Allows you to run this workflow manually from the Actions tab
+  #workflow_dispatch:
+
+jobs:
+
+  telegram-notify:
+    name: Send notification to Telegram — Python
+    runs-on: ubuntu-latest
+    env:
+      TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+      TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+      GITHUB_ISSUE_BODY: ${{ github.event.issue.body }}
+      TELEGRAM_PARSE_MODE: MarkdownV2
+      TELEGRAM_ALLOW_SENDING_WITHOUT_REPLY: True
+    strategy:
+      matrix:
+        python-version: [3.7]
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Setup Python v${{ matrix.python-version }}
+        uses: actions/setup-python@v2
+        with:
+          python-version: ${{ matrix.python-version }}
+
+      - name: Python version
+        run: python3 --version
+
+      - name: Parse Github issue & Send notification to Telegram [bug]
+        if: contains(github.event.issue.labels.*.name, 'bug')
+        env:
+          TELEGRAM_MESSAGE_TEMPLATE: "🐞 *[${{ github.event.issue.title }}](${{ github.event.issue.html_url }})*\n\nТип: `bug`\nСтатус: `${{ github.event.issue.state }}`"
+        run: python3 send_telegram.py
+
+      - name: Parse Github issue & Send notification to Telegram [idea]
+        if: contains(github.event.issue.labels.*.name, 'idea')
+        env:
+          TELEGRAM_MESSAGE_TEMPLATE: "💡 *[${{ github.event.issue.title }}](${{ github.event.issue.html_url }})*\n\nТип: `idea`\nСтатус: `${{ github.event.issue.state }}`"
+        run: python3 send_telegram.py
+
+      - name: Parse Github issue & Send notification to Telegram [question]
+        if: contains(github.event.issue.labels.*.name, 'question')
+        env:
+          TELEGRAM_MESSAGE_TEMPLATE: "❓ *[${{ github.event.issue.title }}](${{ github.event.issue.html_url }})*\n\nТип: `question`\nСтатус: `${{ github.event.issue.state }}`"
+        run: python3 send_telegram.py
