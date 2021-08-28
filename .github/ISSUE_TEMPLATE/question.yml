@@ -1,0 +1,24 @@
+name: "Question ❓"
+description: Мне только спросить... На самом деле — используйте этот шаблон, если другие не подходят.
+labels:
+  - question
+
+body:
+  - type: markdown
+    attributes:
+      value: Уверены, что не нашли ответа в [FAQ](https://telepost-me.github.io/faq/)? Пробовали спросить в [чате](https://t.me/joinchat/KL_EBhbpHVuFmf_LDAHmTQ)?
+
+  - type: textarea
+    id: question
+    attributes:
+      label: Вопрос
+      description: Развернуто и внятно напишите ваш вопрос. Добавьте скриншоты/картинки, если это возможно.
+    validations:
+      required: true
+
+  - type: textarea
+    id: chat-links
+    attributes:
+      label: Ссылки на обсуждение
+      description: Если уже спрашивали в [чате](https://t.me/joinchat/KL_EBhbpHVuFmf_LDAHmTQ), и решили перенести обсуждение сюда — укажите ссылки на сообщения в чате. Это нужно для автоматического оповещения.
+      placeholder: "Ссылки обязательно оберните в < и >. Например: <https://t.me/c/1306965784/28792>"
