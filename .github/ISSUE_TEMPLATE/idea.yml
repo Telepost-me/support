@@ -1,0 +1,38 @@
+name: "Idea \U0001F4A1"
+description: У меня есть идея или предложение по улучшению.
+labels:
+  - idea
+
+body:
+  - type: markdown
+    attributes:
+      value: Спасибо, что нашли время заполнить эту форму!
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Краткое описание
+      description: Напишите вкратце в чем заключается идея/улучшение.
+    validations:
+      required: true
+
+  - type: textarea
+    id: implementation
+    attributes:
+      label: Как вы видите решение/реализацию
+      description: Здесь развернуто напишите, как и что должно работать. Добавьте скриншоты/картинки, если это возможно.
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternative-implementation
+    attributes:
+      label: Альтернативные варианты
+      description: В случае, если не получится сделать полностью, как вы хотите — как вы видите упрощенный/алтернативный вариант?
+
+  - type: textarea
+    id: chat-links
+    attributes:
+      label: Ссылки на обсуждение
+      description: Часто идеи появляются в [чате](https://t.me/joinchat/KL_EBhbpHVuFmf_LDAHmTQ) — укажите здесь ссылки на сообщения в чате. Это нужно для автоматического оповещения.
+      placeholder: "Ссылки обязательно оберните в < и >. Например: <https://t.me/c/1306965784/28792>"

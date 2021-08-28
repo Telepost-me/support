@@ -1,0 +1,106 @@
+name: "Bug report \U0001F41E"
+description: Я нашел баг.
+labels:
+  - bug
+
+body:
+  - type: markdown
+    attributes:
+      value: Спасибо, что нашли время описать найденную проблему!
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Описание
+      description: Внятное, однозначное и подробное описание проблемы.
+    validations:
+      required: true
+
+  - type: textarea
+    id: how-to-reproduce
+    attributes:
+      label: Как повторить
+      description: Шаги, с помощью которых можно воспроизвести баг. Добавьте скриншоты, если это возможно.
+      value: |
+        Шаги, с помощью которых можно воспроизвести баг:
+        1. Создаем пост такого-то типа...
+        2. Делаем то..
+        3. Нажимаем это...
+        4. Видим ошибку
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected-behavior
+    attributes:
+      label: Ожидаемое поведение
+      description: Опишите, что ожидали получить в этом случае (тут вы можете осознать, что может быть это и не баг вовсе, а так было задумано).
+    validations:
+      required: true
+
+  - type: dropdown
+    id: post-type
+    attributes:
+      label: Тип поста
+      description: Какие типы поста затрагивает баг?
+      multiple: true
+      options:
+        - Текст
+        - Фото
+        - Видео
+        - Документ
+        - Альбом
+        - Опрос
+        - Музыка
+        - Голос
+        - Анимация
+    validations:
+      required: true
+
+  - type: dropdown
+    id: interface
+    attributes:
+      label: В каком интерфейсе воспроизводится баг?
+      description: У Телепоста есть [веб-версия](https://app.telepost.me) и [бот](https://t.me/TelepostBot).
+      multiple: true
+      options:
+        - Веб-версия (ниже укажите браузер)
+        - Бот
+
+  - type: dropdown
+    id: browsers
+    attributes:
+      label: Браузер
+      description: |
+        В каких браузерах точно воспроизводится баг (для веб-версии Телепост)?
+        Кстати, вы пробовали в инкогнито-режиме? А плагины (блокировщики рекламы) отключали?
+      multiple: true
+      options:
+        - Google Chrome
+        - Mozilla Firefox
+        - Microsoft Edge
+        - Safari
+        - Opera
+        - Яндекс.Браузер
+        - Другой
+
+  - type: dropdown
+    id: os
+    attributes:
+      label: Операционная система
+      description: На каких ОС точно воспроизводится баг?
+      multiple: true
+      options:
+        - Windows
+        - Linux
+        - macOS
+        - iOS
+        - Android
+        - Другая
+
+  - type: textarea
+    id: chat-links
+    attributes:
+      label: Ссылки на обсуждение
+      description: Обычно про баг пишут в [чате](https://t.me/joinchat/KL_EBhbpHVuFmf_LDAHmTQ) — укажите здесь ссылки на сообщения в чате. Это нужно для автоматического оповещения.
+      placeholder: "Ссылки обязательно оберните в < и >. Например: <https://t.me/c/1306965784/28792>"
