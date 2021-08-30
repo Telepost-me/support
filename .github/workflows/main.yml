@@ -1,4 +1,4 @@
-name: Telegram
+name: Telegram notify
 
 # Controls when the workflow will run
 on:
