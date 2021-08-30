@@ -1,6 +1,8 @@
 # [Telepost](https://telepost.me/) <img src="https://app.telepost.me/assets/favicons/icon-194x194.png" alt="Telepost logo" align="right" />
 
 ![workflow status](https://github.com/Telepost-me/support/actions/workflows/main.yml/badge.svg)
+[![Telepost Support — чат](https://shields.io/badge/Telepost-Чат-green?logo=telegram&style=social)](https://t.me/joinchat/KL_EBhbpHVuFmf_LDAHmTQ)
+
 
 **Лучший отложенный постинг для Телеграм!**
 
