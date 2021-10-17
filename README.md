@@ -1,7 +1,7 @@
 # [Telepost](https://telepost.me/) <img src="https://app.telepost.me/assets/favicons/icon-194x194.png" alt="Telepost logo" align="right" />
 
 ![workflow status](https://github.com/Telepost-me/support/actions/workflows/main.yml/badge.svg)
-[![Telepost Support — чат](https://shields.io/badge/Telepost-Чат-green?logo=telegram&style=social)](https://t.me/joinchat/KL_EBhbpHVuFmf_LDAHmTQ)
+[![Telepost Support — чат](https://shields.io/badge/Telepost-Чат-green?logo=telegram&style=social)](https://t.me/joinchat/Ypg01CdfpW5jNWFi)
 
 
 **Лучший отложенный постинг для Телеграм!**
@@ -25,6 +25,6 @@ Telepost помогает администраторам каналов сокр
 
 
 ## Поддержка
-* [Телеграм-чат](https://t.me/joinchat/KL_EBhbpHVuFmf_LDAHmTQ)
+* [Телеграм-чат](https://t.me/joinchat/Ypg01CdfpW5jNWFi)
 * [Известные баги](https://github.com/Telepost-me/support/issues?q=is%3Aissue+is%3Aopen+label%3Abug)
 * [Список идей](https://github.com/Telepost-me/support/issues?q=is%3Aissue+is%3Aopen+label%3Aidea)
