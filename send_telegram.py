@@ -37,6 +37,7 @@ def telegram_send_message(
     try:
         if parse_mode == "MarkdownV2":
             text = text.replace('-', '\\-')
+            text = text.replace('+', '\\+')
         
         request = urllib.request.Request(
             f"https://api.telegram.org/bot{token}/sendMessage",
