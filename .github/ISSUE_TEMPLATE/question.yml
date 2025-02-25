@@ -1,4 +1,6 @@
+---
 name: "Question ❓"
+type: question
 description: Мне только спросить... На самом деле — используйте этот шаблон, если другие не подходят.
 labels:
   - question
