@@ -1,4 +1,6 @@
+---
 name: "Idea \U0001F4A1"
+type: feature
 description: У меня есть идея или предложение по улучшению.
 labels:
   - idea
