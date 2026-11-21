@@ -1,7 +1,7 @@
 ---
 name: "Bug report \U0001F41E"
 type: bug
-description: Я нашел баг.
+description: Я нашел баг / I found a bug
 labels:
   - bug
 
@@ -13,7 +13,7 @@ body:
   - type: textarea
     id: description
     attributes:
-      label: Описание
+      label: Описание / Description
       description: Внятное, однозначное и подробное описание проблемы.
     validations:
       required: true
@@ -21,7 +21,7 @@ body:
   - type: textarea
     id: how-to-reproduce
     attributes:
-      label: Как повторить
+      label: Как повторить / How to reproduce
       description: Шаги, с помощью которых можно воспроизвести баг. Добавьте скриншоты, если это возможно.
       value: |
         Шаги, с помощью которых можно воспроизвести баг:
@@ -35,15 +35,15 @@ body:
   - type: textarea
     id: expected-behavior
     attributes:
-      label: Ожидаемое поведение
-      description: Опишите, что ожидали получить в этом случае (тут вы можете осознать, что может быть это и не баг вовсе, а так было задумано).
+      label: Ожидаемое поведение / Expected behavior
+      description: Опишите, что ожидали получить в этом случае (тут вы можете осознать, что может быть это и не баг вовсе, а так и было задумано).
     validations:
       required: true
 
   - type: dropdown
     id: post-type
     attributes:
-      label: Тип поста
+      label: Тип поста / Post type
       description: Какие типы поста затрагивает баг?
       multiple: true
       options:
@@ -62,7 +62,7 @@ body:
   - type: dropdown
     id: interface
     attributes:
-      label: В каком интерфейсе воспроизводится баг?
+      label: В каком интерфейсе воспроизводится баг? / In which interface is the bug reproduced?
       description: У Телепоста есть [веб-версия](https://app.telepost.me) и [бот](https://t.me/TelepostBot).
       multiple: true
       options:
@@ -72,7 +72,7 @@ body:
   - type: dropdown
     id: browsers
     attributes:
-      label: Браузер
+      label: Браузеры / Browsers
       description: |
         В каких браузерах точно воспроизводится баг (для веб-версии Телепост)?
         Кстати, вы пробовали в инкогнито-режиме? А плагины (блокировщики рекламы) отключали?
@@ -89,7 +89,7 @@ body:
   - type: dropdown
     id: os
     attributes:
-      label: Операционная система
+      label: Операционная система / Operating System
       description: На каких ОС точно воспроизводится баг?
       multiple: true
       options:
@@ -103,6 +103,6 @@ body:
   - type: textarea
     id: chat-links
     attributes:
-      label: Ссылки на обсуждение
+      label: Ссылки на обсуждение / Links to the discussion
       description: Обычно про баг пишут в [чате](https://t.me/joinchat/Ypg01CdfpW5jNWFi) — укажите здесь ссылки на сообщения в чате. Это нужно для автоматического оповещения.
       placeholder: "Ссылки обязательно оберните в < и >. Например: <https://t.me/c/1306965784/28792>"

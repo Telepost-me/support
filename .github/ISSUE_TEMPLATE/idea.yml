@@ -1,7 +1,7 @@
 ---
 name: "Idea \U0001F4A1"
 type: feature
-description: У меня есть идея или предложение по улучшению.
+description: У меня есть идея или предложение по улучшению / I have an idea or a suggestion for improvement
 labels:
   - idea
 
@@ -13,7 +13,7 @@ body:
   - type: textarea
     id: description
     attributes:
-      label: Краткое описание
+      label: Краткое описание / Short description
       description: Напишите вкратце в чем заключается идея/улучшение.
     validations:
       required: true
@@ -21,7 +21,7 @@ body:
   - type: textarea
     id: implementation
     attributes:
-      label: Как вы видите решение/реализацию
+      label: Как вы видите решение/реализацию / How do you see the solution/implementation?
       description: Здесь развернуто напишите, как и что должно работать. Добавьте скриншоты/картинки, если это возможно.
     validations:
       required: true
@@ -29,12 +29,12 @@ body:
   - type: textarea
     id: alternative-implementation
     attributes:
-      label: Альтернативные варианты
+      label: Альтернативные варианты / Alternative solutions
       description: В случае, если не получится сделать полностью, как вы хотите — как вы видите упрощенный/алтернативный вариант?
 
   - type: textarea
     id: chat-links
     attributes:
-      label: Ссылки на обсуждение
+      label: Ссылки на обсуждение / Links to the discussion
       description: Часто идеи появляются в [чате](https://t.me/joinchat/Ypg01CdfpW5jNWFi) — укажите здесь ссылки на сообщения в чате. Это нужно для автоматического оповещения.
       placeholder: "Ссылки обязательно оберните в < и >. Например: <https://t.me/c/1306965784/28792>"
