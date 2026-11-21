@@ -25,13 +25,13 @@ jobs:
       TELEGRAM_ALLOW_SENDING_WITHOUT_REPLY: True
     strategy:
       matrix:
-        python-version: [3.13.2]
+        python-version: [3.15]
 
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v6
 
       - name: Setup Python v${{ matrix.python-version }}
-        uses: actions/setup-python@v2
+        uses: actions/setup-python@v6
         with:
           python-version: ${{ matrix.python-version }}
 

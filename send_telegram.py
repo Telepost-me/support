@@ -33,13 +33,13 @@ def telegram_send_message(
     allow_sending_without_reply:bool,
     parse_mode:str
     ):
-    
+
     try:
         if parse_mode == "MarkdownV2":
             text = text.replace('-', '\\-')
             text = text.replace('+', '\\+')
             text = re.sub(r'\[(.*)\((.*)\)(.*)\]\((.*)\)', r'[\1\(\2\)\3](\4)', text)
-        
+
         request = urllib.request.Request(
             f"https://api.telegram.org/bot{token}/sendMessage",
             json.dumps(
@@ -60,7 +60,7 @@ def telegram_send_message(
         print(f"● Method: {request.get_method()}")
         print(f"● Headers: {request.header_items()}")
         print(f"● Data: {request.data}")
-        
+
         with urllib.request.urlopen(request) as f:
             response = f.read()
             print(f"● Status: {f.status}")
